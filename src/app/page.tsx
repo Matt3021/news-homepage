@@ -4,15 +4,17 @@ import heroImage from '../../public/image-web-3-desktop.jpg'
 import imagePc from '../../public/image-retro-pcs.jpg'
 import topLaptops from '../../public/image-top-laptops.jpg'
 import gamingGrowth from '../../public/image-gaming-growth.jpg'
+import menuIcon from '../../public/icon-menu.svg'
 
 export default function Home () {
   return (
     <div className="w-screen flex items-center
-     flex-col mt-24">
-      <div className="top-content flex gap-[611px] mb-[60px]">
+     flex-col mt-24 sm:mt-10">
+      <div className="top-content flex gap-[611px] mb-[60px] sm:gap-[255px] sm:items-center sm:mb-[40px]">
         <Image src={logo} alt="logo" width={70} height={30}/>
         <nav>
-          <ul className="flex justify-between w-[440px] text-[#b9b6bd] font-semibold">
+          <Image src={menuIcon} alt="Icon Menu" className="sm:block hidden"/>
+          <ul className="flex justify-between w-[440px] text-[#b9b6bd] font-semibold sm:hidden">
             <li><a href="" className="hover:text-[#cb918d]">Home</a></li>
             <li><a href="" className="hover:text-[#cb918d]">New</a></li>
             <li><a href="" className="hover:text-[#cb918d]">Popular</a></li>
@@ -21,18 +23,18 @@ export default function Home () {
           </ul>
         </nav>
       </div>
-      <div className="main-content flex gap-9">
-        <div className="left-side w-[730px] h-[515px]">
-          <Image src={heroImage} alt="Hero Image" className="mb-10"/>
-          <div className="flex gap-[100px]">
-            <h1 className="text-5xl text-[#00001c] font-extrabold w-[800px]">The Bright Future of Web 3.0?</h1>
+      <div className="main-content flex gap-9 sm:flex-col sm:items-center sm:ml-6 sm:gap-0 ">
+        <div className="left-side w-[730px] h-[515px] sm:w-screen sm:h-screen sm:flex-col sm:items-center">
+          <Image src={heroImage} alt="Hero Image" className="mb-10 sm:w-[3  50px] sm:h-[350px] sm:pr-5"/>
+          <div className="flex gap-[100px] sm:gap-10 sm:flex-col sm:items-center">
+            <h1 className="text-5xl text-[#00001c] font-extrabold w-[800px] sm:w-screen">The Bright Future of Web 3.0?</h1>
             <div>
-              <p className="text-[#726f7a] mb-[40px]">We dive into next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <p className="text-[#726f7a] mb-[40px] sm:leading-7">We dive into next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
               <button className="w-48 h-14 bg-[#f15d51] text-white text-center text-sm uppercase font-bold tracking-[3px] hover:bg-[#060525] hover:text-white">Read More</button>
             </div>
           </div>
         </div>
-        <div className="right-side bg-[#060525] w-[350px] p-5">
+        <div className="right-side bg-[#060525] w-[350px] p-5 sm:mr-5">
           <h1 className="text-[#e9ae50] font-bold text-4xl mb-10">New</h1>
           <div className="text-white border-b border-[#cfd0e5] mb-[15px]">
             <div className="title font-bold mb-[10px] text-[20px] hover:text-[#e5ac5d]">Hydrogen VS Eletric Cars</div>
@@ -48,7 +50,7 @@ export default function Home () {
           </div>
         </div>
       </div>
-      <div className="bottom-content flex  gap-9 mt-[50px]">
+      <div className="bottom-content flex gap-9 mt-[50px] sm:flex-col sm:mb-10">
         <div className="flex w-[350px]">
           <Image src={imagePc} alt="Pc Retro Image" className="w-[100px] mr-[26px]"/>
           <div>

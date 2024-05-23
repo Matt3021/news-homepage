@@ -573,14 +573,11 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-\[10px\] {
+  margin-bottom: 10px;
 }
 .mb-\[15px\] {
   margin-bottom: 15px;
-}
-.mb-\[23px\] {
-  margin-bottom: 23px;
 }
 .mb-\[38px\] {
   margin-bottom: 38px;
@@ -600,35 +597,23 @@ video {
 .mt-\[50px\] {
   margin-top: 50px;
 }
-.mb-\[10px\] {
-  margin-bottom: 10px;
-}
-.mb-\[5px\] {
-  margin-bottom: 5px;
-}
-.mb-\[110px\] {
-  margin-bottom: 110px;
-}
-.mb-\[1px\] {
-  margin-bottom: 1px;
-}
-.mb-\[px\] {
-  margin-bottom: px;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mb-8 {
-  margin-bottom: 2rem;
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .h-14 {
   height: 3.5rem;
 }
 .h-\[515px\] {
   height: 515px;
+}
+.w-44 {
+  width: 11rem;
 }
 .w-48 {
   width: 12rem;
@@ -669,45 +654,12 @@ video {
 .gap-\[611px\] {
   gap: 611px;
 }
-.border {
-  border-width: 1px;
-}
-.border-\[0\.5px\] {
-  border-width: 0.5px;
-}
 .border-b {
   border-bottom-width: 1px;
-}
-.border-b-\[0\.5px\] {
-  border-bottom-width: 0.5px;
-}
-.border-b-\[0\.2px\] {
-  border-bottom-width: 0.2px;
-}
-.border-b-\[0\.1px\] {
-  border-bottom-width: 0.1px;
-}
-.border-b-\[0\.01px\] {
-  border-bottom-width: 0.01px;
-}
-.border-b-\[0\.001px\] {
-  border-bottom-width: 0.001px;
-}
-.border-b-\[0\.00001px\] {
-  border-bottom-width: 0.00001px;
 }
 .border-\[\#cfd0e5\] {
   --tw-border-opacity: 1;
   border-color: rgb(207 208 229 / var(--tw-border-opacity));
-}
-.border-\[\] {
-  border-color: ;
-}
-.border-b-\[0\.px\] {
-  border-bottom-color: 0.px;
-}
-.border-b-\[px\] {
-  border-bottom-color: px;
 }
 .bg-\[\#060525\] {
   --tw-bg-opacity: 1;
@@ -723,34 +675,20 @@ video {
 .text-center {
   text-align: center;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-\[14px\] {
-  font-size: 14px;
-}
-.text-\[25px\] {
-  font-size: 25px;
-}
-.text-\[20px\] {
-  font-size: 20px;
 }
 .font-bold {
   font-weight: 700;
@@ -807,29 +745,109 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(6 5 37 / var(--tw-bg-opacity));
 }
-.hover\:text-\[\#f5ba6a\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(245 186 106 / var(--tw-text-opacity));
-}
 .hover\:text-\[\#cb918d\]:hover {
   --tw-text-opacity: 1;
   color: rgb(203 145 141 / var(--tw-text-opacity));
-}
-.hover\:text-\[\]:hover {
-  color: ;
-}
-.hover\:text-\[\#\]:hover {
-  color: #;
-}
-.hover\:text-\[\#e5ac5d\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(229 172 93 / var(--tw-text-opacity));
 }
 .hover\:text-\[\#da605b\]:hover {
   --tw-text-opacity: 1;
   color: rgb(218 96 91 / var(--tw-text-opacity));
 }
+.hover\:text-\[\#e5ac5d\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 172 93 / var(--tw-text-opacity));
+}
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (max-width: 639px) {
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .sm\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
+  .sm\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:inline {
+    display: inline;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
+  .sm\:w-screen {
+    width: 100vw;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .sm\:gap-\[255px\] {
+    gap: 255px;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .sm\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  .sm\:leading-7 {
+    line-height: 1.75rem;
+  }
 }
